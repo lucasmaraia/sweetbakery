@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+  transition-duration: 5000ms;
+}
+
+#sec4 {
+  background-image: url('../imagens/layout4.jpg');
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#formulario {
+  width: 30%;
+  padding-top: 300px;
+  padding-left: 100px;
+  
+}
+
+
+#sec3 {
+  background-image: url('../imagens/layout3.jpg');
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+#inscrevase {
+  width: 80%;
+  padding-top: 550px;
+  padding-right: 100px;
+  padding-left: 800px;
+  
+}
+
+
+.bg-light {
+  background: #d3a0a0 !important;
+}

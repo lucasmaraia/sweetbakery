@@ -21,7 +21,7 @@
    <link rel="stylesheet" href ="/css/estilo.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    <meta>
-   <body>
+   <body style="background-color: #d3a0a0";>
    <br>
   <center><center> <h1>Dados registrados com sucesso.</h1> </center>
   <center>      <h2>Obrigado pela sua contribuição</h2> </center>

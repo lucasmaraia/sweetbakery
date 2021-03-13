@@ -9,7 +9,7 @@
       <meta charset="utf-8">
    </head>
    <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" background-color: #d3a0a0 !important" >
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
          <ul class="navbar-nav">
             <li class="nav-item">
                <a class="nav-link active" aria-current="page" href =  "#sec1">Home</a>

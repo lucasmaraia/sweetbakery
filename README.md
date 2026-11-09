@@ -43,11 +43,31 @@ CREATE TABLE sugestao (
 );
 ```
 
+## Configuração
+
+A conexão com o banco é lida de variáveis de ambiente, com valores padrão para um MySQL local:
+
+| Variável      | Padrão      |
+|---------------|-------------|
+| `DB_HOST`     | `localhost` |
+| `DB_USER`     | `root`      |
+| `DB_PASSWORD` | vazio       |
+| `DB_NAME`     | `sweetbakery` |
+
+```bash
+export DB_HOST="localhost"
+export DB_USER="root"
+export DB_PASSWORD="sua-senha"
+export DB_NAME="sweetbakery"
+```
+
+No Windows (PowerShell), use `$env:DB_USER = "root"`.
+
 ## Como rodar
 
 1. Suba um ambiente com PHP e MySQL.
 2. Crie as tabelas acima.
-3. Ajuste as credenciais em `conexao.php`.
+3. Configure as variáveis de ambiente do banco (veja a seção acima).
 4. Sirva a pasta:
 
 ```bash
@@ -56,6 +76,6 @@ php -S localhost:8000
 
 ## Ressalvas (código de 2021)
 
-- **Credenciais no repositório.** O `conexao.php` tem as credenciais de um banco ClearDB do Heroku escritas no código. O serviço foi descontinuado e as credenciais estão mortas, mas o padrão certo é usar variáveis de ambiente.
+- ~~**Credenciais no repositório.**~~ **Corrigido:** o `conexao.php` agora lê host, usuário, senha e banco de variáveis de ambiente. As credenciais antigas (um banco ClearDB do Heroku) seguem no histórico de commits, mas o serviço foi descontinuado e elas estão mortas.
 - **SQL injection.** Os `INSERT` concatenam os valores de `$_POST` diretamente na query, sem escape nem *prepared statements*.
 - Sem validação no servidor e sem confirmação visível de que o envio funcionou — o usuário só vê a página recarregar.

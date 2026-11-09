@@ -1,9 +1,9 @@
 <?php 
 
-$host = "us-cdbr-east-03.cleardb.com";
-$usuario = "bd3d001edc07f1";
-$senha = "0746fd6d";
-$bd = "heroku_1a46cd7354a3ac4";
+$host = getenv("DB_HOST") ?: "localhost";
+$usuario = getenv("DB_USER") ?: "root";
+$senha = getenv("DB_PASSWORD") ?: "";
+$bd = getenv("DB_NAME") ?: "sweetbakery";
 
 $mysqli = new mysqli($host,$usuario,$senha,$bd);
 
